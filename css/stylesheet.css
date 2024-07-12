@@ -1,0 +1,95 @@
+.nav-item {
+   width: 16%;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:active {
+  font-size:18px;
+}
+
+body {
+  background-color: black;
+}
+
+.card-block-white{
+  margin-bottom: 15px;
+  background-color: #fff;
+  border:1px solid gray;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out !important;
+  border-radius: 24px;
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: none;
+    opacity: 0.9;
+  }
+}
+
+.card-block-black{
+  margin-left: 15px ;
+  margin-bottom: 15px;
+  border:1px solid gray;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out !important;
+  border-radius: 24px;
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: none;
+    opacity: 0.9;
+  }
+}
+
+.card-body {
+  background-color: black;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+h3{
+  padding-top: 12px;
+  text-align: center;
+  font-size: 120px;
+  font-family: garamond;
+  font-style: italic;
+  color: #e5e5e5;
+}
+h4{
+    padding-top: 12px;
+  text-align: center;
+  font-size: 20px;
+  font-family: courier;
+  color: #e5e5e5;
+}
+.aboutp{
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.watch{
+  color: #5e5e5e;
+}
+
+#carouselWatch .carousel-control-next,
+#carouselWatch .carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}

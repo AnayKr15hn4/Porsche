@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+   <div class="container-fluid">
+      <!--navigation -->
+      <nav class="navbar navbar-expand-sm bg-black-black fixed-top">
+          <ul style="width:100%; " class="navbar-nav">
+            <li class="nav-item" style="width:36%">
+              <a class="nav-link active" href="#" style="padding-left: 15px;">
+              <img src="image/logo1.png" width="250"  class="d-inline-block align-top" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <!-- colapse link -->
+              <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">MODLES</a>
+            </li>
+            <li class="nav-item">
+               <!-- dropdown menu link -->
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  SOCIALS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://www.youtube.com/@Porsche">youtube</a></li>
+                  <li><a class="dropdown-item" href="https://x.com/Porsche?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">X (twitter)</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/porsche/?hl=en">Instagram</a></li>
+                </ul>
+              </div>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">FEEDBACK</a>
+            </li>
+          </ul>
+          <!-- colapse block -->
+          <div class="collapse position-absolute" id="collapseExample" style="margin-top:220px;width:98%;margin-left:15px;"
+             data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="card card-body">
+              <div class="row fnt d-flex " style="scrollbar-color: black white;">
+                <div class="col-2 card-block-white"><a href="pages/718.html"> <img src="image/718.webp" class="img-rounded" alt="Cinque Terre" width="220" ></a></div>
+                <div class="col-2 card-block-white"><a href="pages/911.html"><img src="image/911.webp" class="img-rounded" alt="Cinque Terre" width="220"></a></div>
+                <div class="col-2 card-block-white"><a href="pages/tycan.html"><img src="image/taycan.webp" class="img-rounded" alt="Cinque Terre" width="220" ></a></div>
+                <div class="col-2 card-block-white"><a href="pages/pan.html"><img src="image/panamera.webp" class="img-rounded" alt="Cinque Terre" width="220" ></a></div>
+                <div class="col-2 card-block-white"><a href="pages/cay.html"><img src="image/cayenne.webp" class="img-rounded" alt="Cinque Terre" width="220" ></a></div>
+                <div class="col-2 card-block-white"><a href="pages/macan.html"><img src="image/macan.webp" class="img-rounded" alt="Cinque Terre" width="220" ></a></div>
+
+              </div>
+            </div>
+          </div>
+      </nav> 
+ 
+      <!-- video -->
+      <section id="hero" class="d-flex align-items-center">
+          <video autoplay muted loop id="myVideo" style="width:100%">
+              <source src="video/promo1.mp4" type="video/mp4">
+          </video>
+          <div class="container-fluid position-absolute" data-aos="fade-up" data-aos-delay="500"  style="al; width:98%">
+            <div class="row"> 
+              <div class="col-9"><h1 style ="color: white; font-size: 150px;  font-family: monospace; margin-left: 10px;"><br>Be<br>Iconic</h1>
+              </div>
+               <div class="col-3" style="padding-top:450px ;"> <a href="https://configurator.porsche.com/en-US/model/992850?rt=1720621916&screen=1536x864" class="btn-get-started scrollto" style="border: 2px solid white; color: white; padding: 20px; text-decoration: none; font-size: 25px;">configure yours now</a>
+               </div>             
+            </div>
+          </div>
+      </section>
+   </div>
+   <br>
+
+   <!-- Carousal -->
+   <div class="container-fluid">
+          <div id="carouselExample" class="carousel slide" >
+        <div class="carousel-inner" style="background-color:grey; margin-top:180px; margin-bottom:180px;">
+          <div class="carousel-item active">
+            <h3><b>718</b> Cayman</h3>
+            <a href="pages/718.html">
+            <img src="image/718.png" class="d-block w-50 center" alt="..." >
+             </a>
+             <h4>Starting From $72,800</p>
+          </div>
+          <div class="carousel-item">
+            <h3><b>911</b></h3>
+            <a href="pages/911.html">
+              <img src="image/911.png" class="d-block w-50 center" alt="...">
+            </a>
+            <h4>Starting From $114,400</p>
+          </div>
+          <div class="carousel-item">
+            <h3>Taycan</h3>
+            <a href="pages/tycan.html">
+              <img src="image/tycan.png" class="d-block w-50 center" alt="...">
+            </a>
+            <h4>Starting From &99,400</p>
+          </div>
+          <div class="carousel-item ">
+            <h3>Panamara</h3>
+            <a href="pages/pan.html">
+              <img src="image/pan.png" class="d-block w-50 center" alt="..." >
+            </a>
+            <h4>Starting From &102,800</p>
+          </div>
+          <div class="carousel-item">
+            <h3>Cayenne</h3>
+            <a href="pages/cay.html">
+              <img src="image/cay.png" class="d-block w-50 center" alt="...">
+            </a>
+            <h4>Starting From &62,900</p>
+          </div>
+          <div class="carousel-item">
+            <h3>Macan</h3>
+            <a href="pages/macan.html">
+              <img src="image/macan.png" class="d-block w-50 center" alt="..." >
+            </a>
+            <h4>Starting From $84,700</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+   </div>
+   <br>
+   <!-- content 1-->
+   <div id="aboutus" class="container-fluid" style="background-color:white; padding-top:50px; padding-bottom:50px">
+      <h2 style="font-family: monospace;font-size: 70px ;" class="h3">Porsche: <br>Precision and Passion in Motion</h2>
+      <br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p class="aboutp"> &ensp;&ensp;&ensp;&ensp;&ensp; Welcome to <b style="color: red; font-size: 22px;">Porsche </b>, where <b style="color: red; font-size: 22px;">Passion </b>meets<b style="color: red; font-size: 22px;"> Precision </b>, and innovation thrives at every turn. For decades, Porsche has epitomized the relentless pursuit of automotive excellence, blending cutting-edge technology with iconic design to create vehicles that transcend mere transportation. Our commitment to performance is matched only by our dedication to craftsmanship, ensuring each Porsche not only exhilarates on the road but also inspires a profound connection between driver and machine. Join us in embracing the future of driving, where every curve represents a new opportunity to redefine what's possible. Discover the essence of driving pleasure with Porsche, where dreams accelerate into reality.
+            </p>
+        </div>
+      </div>
+   </div>
+
+   <!-- content 2-->
+   <div class="container-fluid">
+      <div id="carouselWatch" class="carousel slide" >
+        <div class="carousel-inner" style="background-color:white; margin-top:180px; margin-bottom:180px;">
+          <div class="carousel-item active">
+            <h3 class="watch" style="font-size: 40px !important;">CHRONOTIMER SERIES 1 FLYBACK</h3>
+            <a href="https://www.porsche-design.com/us/en/porsche-design-shop/shop/timepieces/">
+            <img src="image/watch1.webp" class="d-block w-50 center" alt="..." style="width:400px !important;">
+             </a>
+             <h4>Configure Your Chronograph</p>
+          </div>
+          <div class="carousel-item">
+            <h3 class="watch" style="font-size: 40px !important;">1919 GLOBETIMER UTC</h3>
+            <a href="https://www.porsche-design.com/us/en/porsche-design-shop/shop/timepieces/">
+              <img src="image/watch2.webp" class="d-block w-50 center" alt="..." style="width:400px !important;">
+            </a>
+            <h4>Configure Your Chronograph</p>
+          </div>
+          <div class="carousel-item">
+            <h3 class="watch" style="font-size: 40px !important;">1919 CHRONOTIMER FLYBACK</h3>
+            <a href="https://www.porsche-design.com/us/en/porsche-design-shop/shop/timepieces/">
+              <img src="image/watch3.webp" class="d-block w-50 center" alt="..." style="width:400px !important;">
+            </a>
+            <h4>Configure Your Chronograph</p>
+          </div>
+          <div class="carousel-item ">
+            <h3 class="watch" style="font-size: 40px !important;">CHRONOGRAPH 1 GP 2022 EDITION</h3>
+            <a href="https://www.porsche-design.com/us/en/porsche-design-shop/shop/timepieces/">
+              <img src="image/watch4.webp" class="d-block w-50 center" alt="..."  style="width:400px !important;">
+            </a>
+            <h4>Configure Your Chronograph</p>
+          </div>
+          <div class="carousel-item">
+            <h3 class="watch" style="font-size: 40px !important;">CHRONOGRAPH 1 NUMBERD EDITION </h3>
+            <a href="https://www.porsche-design.com/us/en/porsche-design-shop/shop/timepieces/">
+              <img src="image/watch5.webp" class="d-block w-50 center" alt="..." style="width:400px !important;">
+            </a>
+            <h4>Configure Your Chronograph</p>
+          </div>
+          <div class="carousel-item">
+            <h3 class="watch" style="font-size: 40px !important;">CHRONOGRAPH 1-75 YEARS PORSCHE EDITION</h3>
+            <a href="https://www.porsche-design.com/us/en/porsche-design-shop/shop/timepieces/">
+              <img src="image/watch6.webp" class="d-block w-50 center" alt="..."  style="width:400px !important;">
+            </a>
+            <h4>Configure Your Chronograph</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselWatch" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselWatch" data-bs-slide="next" >
+
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden" >Next</span>
+        </button>
+      </div>
+   </div>
+   <div class="footer">
+            <p style="padding-top:15px;"><marquee scrollamount="8">
+        &ensp;&ensp;1# 50  Ferrari AF Corse  A. Fuoco, M. Molina, N. Nielsen
+        &ensp;&ensp;2# 7 Toyota Gazoo Racing J. Lopez, K. Kobayashi, N. de Vries
+        &ensp;&ensp;3# 51  Ferrari AF Corse  A. Pier Guidi, J. Calado, A. Giovinazzi
+        &ensp;&ensp;4# 6 <b style="color: red;">Porsche Penske Motorsport</b> K. Estre, A. Lotterer, L. Vanthoor
+        &ensp;&ensp;5# 8 Toyota Gazoo Racing S. Buemi, B. Hartley, R. Hirakawa
+        &ensp;&ensp;6# 5 <b style="color: red;">Porsche Penske Motorsport</b> M. Campbell, M. Christensen, F. Makowiecki
+        &ensp;&ensp;7# 2 Cadillac Racing E. Bamber, A. Lynn, A. Palou
+        &ensp;&ensp;8# 12  Hertz Team JOTA W. Stevens, N. Nato, C. Ilott
+        &ensp;&ensp;9# 38  Hertz Team JOTA O. Rasmussen, P. Hanson, J. Button
+        &ensp;&ensp;10#  63  Lamborghini Iron Lynx M. Bortolotti, D. Kvyat, E. Mortara
+        &ensp;&ensp;11#  94  Peugeot TotalEnergies S. Vandoorne, P. di Resta, L. Duval
+        &ensp;&ensp;12#  93  Peugeot TotalEnergies J. Vergne, M. Jensen, N. Müller
+        &ensp;&ensp;13#  19  Lamborghini Iron Lynx R. Grosjean, A. Caldarelli, M. Cairoli
+        &ensp;&ensp;14#  11  Isotta Fraschini  C. Bennett, J. Vernay, A. Serravalle
+        &ensp;&ensp;15#  311 Whelen Cadillac Racing  P. Derani, J. Aitken, F. Drugovich
+        &ensp;&ensp;16#  99  Proton Competition  N. Jani, H. Tincknell, J. Andlauer
+        &ensp;&ensp;17#  20  BMW M Team WRT  S. Van der Linde, R. Frijns, R. Rast
+        &ensp;&ensp;DNF 83  AF Corse  R. Kubica, R. Shwartzman, Y. Yifei
+        &ensp;&ensp;DNF 3 Cadillac Racing S. Bourdais, R. van der Zande, S. Dixon
+        &ensp;&ensp;DNF 4 <b style="color: red;">Porsche Penske Motorsport</b> M. Jaminet, F. Nasr, N. Tandy
+        &ensp;&ensp;DNF 15  BMW M Team WRT  D. Vanthoor, R. Marciello, M. Wittmann
+        &ensp;&ensp;DNF 36  Alpine Endurance Team N. Lapierre, M. Schumacher, M. Vaxiviere
+        &ensp;&ensp;DNF 35  Alpine Endurance Team P. Chatin, F. Habsburg, C. Milesi</marquee></p>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Feedback</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name" value="feedback@porsche.raycenter.com">
+          </div>
+          <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

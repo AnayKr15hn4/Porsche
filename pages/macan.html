@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/stylesheet.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+   <div class="container-fluid">
+      <!--navigation -->
+      <nav class="navbar navbar-expand-sm bg-black-black fixed-top">
+          <ul style="width:100%; " class="navbar-nav">
+            <li class="nav-item" style="width:36%">
+              <a class="nav-link active" href="../index.html" style="padding-left: 15px;">
+              <img src="../image/logo1.png" width="250"  class="d-inline-block align-top" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <!-- colapse link -->
+              <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">MODLES</a>
+            </li>
+            <li class="nav-item">
+               <!-- dropdown menu link -->
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  SOCIALS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://www.youtube.com/@Porsche">youtube</a></li>
+                  <li><a class="dropdown-item" href="https://x.com/Porsche?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">X (twitter)</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/porsche/?hl=en">Instagram</a></li>
+                </ul>
+              </div>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">FEEDBACK</a>
+            </li>
+          </ul>
+          <!-- colapse block -->
+          <div class="collapse position-absolute" id="collapseExample" style="margin-top:220px;width:98%;margin-left:15px;"
+             data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="card card-body">
+              <div class="row fnt d-flex " style="scrollbar-color: black white;">
+                <div class="col-2 card-block-white"><a href="718.html"> <img src="../image/718.webp" class="img-rounded" alt="Cinque Terre" width="220" ></a></div>
+                
+                <div class="col-2 card-block-white"><a href="911.html"><img src="../image/911.webp" class="img-rounded" alt="Cinque Terre" width="220"></a></div>
+                <div class="col-2 card-block-white"><a href="tycan.html"><img src="../image/taycan.webp" class="img-rounded" alt="Cinque Terre" width="220" ></a></div>
+                <div class="col-2 card-block-white"><a href="pan.html"><img src="../image/panamera.webp" class="img-rounded" alt="Cinque Terre" width="220" ></a></div>
+                <div class="col-2 card-block-white"><a href="cay.html"><img src="../image/cayenne.webp" class="img-rounded" alt="Cinque Terre" width="220" ></a></div>
+                <div class="col-2 card-block-white"><a href="macan.html"><img src="../image/macan.webp" class="img-rounded" alt="Cinque Terre" width="220" ></a></div>
+
+              </div>
+            </div>
+          </div>
+      </nav> 
+ 
+
+     <!-- video -->
+     <section id="hero" class="d-flex align-items-center">
+        <video autoplay muted loop id="myVideo" style="width:100%">
+            <source src="../video/promocay.mp4" type="video/mp4">
+        </video>
+        <div class="container-fluid position-absolute" data-aos="fade-up" data-aos-delay="500"  style="al; width:98%">
+          <div class="row"> 
+            <div class="col-9"><h1 style ="color: white; font-size: 150px;  font-family: monospace; margin-left: 10px;"><br>Perform<br>Practicaly</h1></div>
+             <div class="col-3" style="padding-top:450px ;"> </div>
+                 
+          </div>
+        </div>
+     </section>
+   </div>
+   
+   <!-- content 1-->
+   <div id="aboutus" class="container-fluid" style="background-color:white; padding-top:50px; padding-bottom:50px">
+      <h2 style="font-family: monospace;font-size: 70px ;">Porsche: <br>Precision and Passion in Motion</h2>
+      <br>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p class="aboutp"> &ensp;&ensp;&ensp;&ensp;&ensp;Experience the essence of versatility and performance with the Porsche Macan. Designed for those who embrace both adventure and refinement, the Macan effortlessly combines sporty agility with everyday usability. Its dynamic design and robust performance capabilities ensure a thrilling driving experience, whether navigating city streets or exploring winding mountain roads. Inside, a meticulously crafted interior offers comfort and intuitive technology, creating a seamless connection between driver and vehicle. With its distinctive Porsche DNA and adventurous spirit, the Macan redefines what it means to drive an SUV, embodying the perfect balance of power, style, and practicality. Embrace the thrill of the journey with the Porsche Macan, where every drive is an exhilarating adventure.
+            </p>
+        </div>
+      </div>
+   </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Feedback</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name" value="feedback@porsche.raycenter.com">
+          </div>
+          <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
